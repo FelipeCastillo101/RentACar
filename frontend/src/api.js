@@ -1,7 +1,7 @@
 import axios from 'axios'
 import { leerSesion } from './auth'
 
-export const API_BASE = import.meta.env.VITE_API_BASE_URL || '/api'
+export const API_BASE = import.meta.env.VITE_API_BASE_URL || '/'
 // Instancia con la sesión (token) adjunta a cada petición.
 const api = axios.create({ baseURL: API_BASE })
 
