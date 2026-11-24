@@ -98,7 +98,7 @@ class VehiculoViewSet(viewsets.ModelViewSet):
 
     def get_permissions(self):
         if self.action in ('list', 'retrieve'):
-            return [EsStaff()]
+            return [AllowAny()]
         return [EsAdmin()]
 
     @action(detail=True, methods=['post'])
